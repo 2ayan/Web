@@ -114,7 +114,11 @@ public static void getHashMap(HashMap map)throws Exception
         ;
         }
     }
-    
+    public static void clear_relevant_doc()
+    {
+        relevant_docs.clear();
+        
+    }
     public static HashMap<Integer, String> get_relevant_docs()
     {
         return relevant_docs;

@@ -17,6 +17,7 @@
     </head>
     <body>
         <% 
+            Pagination.clear_relevant_doc();
             HashMap <Integer, String> hashed_values=new HashMap<Integer, String>();
             hashed_values=Jave_serv.copytofile();
             Pagination.getHashMap(hashed_values);

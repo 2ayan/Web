@@ -51,7 +51,7 @@ article {
     <u1>
         <b> WRITE THE SUMMARY </b>
         <a href="index.jsp" target="_top"> SEARCH New Query </a>
-        <textarea rows="25" cols="100">
+        <textarea rows="25" cols="70">
 
         </textarea>
     
@@ -85,6 +85,7 @@ if (submit != null)
                     out.println (relevant_docs.get(i));
                     out.println();
                 }
+                
                 
             }
 
