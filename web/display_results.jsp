@@ -24,8 +24,11 @@
             String user_id=(session.getAttribute("user_id")).toString();
             String query=Jave_serv.query_return();
             UserQueryIndex.indexing(query,user_id);
+            
+            //Pagination.clear_relevant_docs();
 
             %>
             
             <a href='div.jsp'> Display The Results </a>
+    </body>
 </html>

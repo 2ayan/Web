@@ -83,7 +83,34 @@ article {
             out.println("<form/>");
 }
     
-  
+else if((sub<9))
+{
+    out.println("<form name='form1' method='post' action='summary.jsp' >");
+                 
+                for (Map.Entry<Integer, String> entry : hashed_values.entrySet()) {
+                
+                
+                    String temp=(entry.getValue());
+                    out.println("<p>");
+                    out.println(entry.getKey()+" : "+entry.getValue());
+                    
+                    out.println("\t");
+
+%>
+
+     <input type=checkbox name=relevant value="<%=temp  %>" />
+     
+<%
+        
+            
+                    temp="";
+                //out.println("</p>");
+            }
+            out.println("<p>"+"<INPUT TYPE='SUBMIT' NAME='Final' VALUE='Final'>"+"</p>");
+            
+            out.println("<form/>");
+
+}
 
 %>        
     
